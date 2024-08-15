@@ -1,0 +1,30 @@
+.odd-row {
+ background-color: #f0efef;
+}
+
+.even-row {
+ background-color: #ffffff;
+}
+
+.bold {
+ font-weight: bold;
+}
+
+.edit-button {
+ margin: 2px;
+ background-color: #4cafad;
+ color: #ffffff;
+}
+
+.delete-button {
+ margin: 2px;
+ background-color: #d15e56;
+ color: #ffffff;
+}
+
+.botao-add-cadastro {
+    margin-top: 10px;
+    float: right;
+    background-color: rgb(24, 125, 214);
+    color: #ffffff;
+}

@@ -1,0 +1,24 @@
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 8px; /* Espaçamento entre os botões */
+}
+
+.btn-save, .btn-cancel {
+    background-color: green;
+    color: white;
+    padding: 8px 16px; /* Ajuste o padding conforme necessário */
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-cancel {
+    background-color: rgb(40, 87, 207);
+}

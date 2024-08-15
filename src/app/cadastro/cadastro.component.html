@@ -1,0 +1,65 @@
+<form [formGroup]="pessoaForm" (ngSubmit)="onSubmit()" class="vertical-form">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="nome" type="text">
+    <mat-error *ngIf="pessoaForm.controls['nome'].hasError('required') && pessoaForm.controls['nome'].touched">
+      Nome é obrigatório
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Perfil</mat-label>
+    <input matInput formControlName="perfil" type="text">
+    <mat-error *ngIf="pessoaForm.controls['perfil'].hasError('required') && pessoaForm.controls['perfil'].touched">
+      Perfil é obrigatório
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Idade</mat-label>
+    <input matInput formControlName="idade" type="number">
+    <mat-error *ngIf="pessoaForm.controls['idade'].hasError('required') && pessoaForm.controls['idade'].touched">
+      Idade é obrigatória
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" type="email">
+    <mat-error *ngIf="pessoaForm.controls['email'].hasError('required') && pessoaForm.controls['email'].touched">
+      Email é obrigatório
+    </mat-error>
+    <mat-error *ngIf="pessoaForm.controls['email'].hasError('email') && pessoaForm.controls['email'].touched">
+      Por favor, insira um endereço de email válido
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Ativo</mat-label>
+    <mat-select formControlName="ativo">
+      <mat-option [value]="true">Sim</mat-option>
+      <mat-option [value]="false">Não</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>País</mat-label>
+    <input matInput formControlName="pais" type="pais">
+    <mat-error *ngIf="pessoaForm.controls['pais'].hasError('required') && pessoaForm.controls['pais'].touched">
+      País é obrigatório
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Nível de Experiência</mat-label>
+    <input matInput formControlName="nivelExperiencia" type="number">
+    <mat-error *ngIf="pessoaForm.controls['nivelExperiencia'].hasError('required') && pessoaForm.controls['nivelExperiencia'].touched">
+      Nível de Experiência é obrigatório
+    </mat-error>
+  </mat-form-field>
+
+  <div class="button-container">
+    <button mat-raised-button type="submit" class="btn-save">Salvar</button>
+    <button mat-raised-button type="button" class="btn-cancel" [routerLink]="['/']">Cancelar</button>
+  </div>
+</form>

@@ -1,0 +1,35 @@
+.app-cadastro-fill-remaining-space {
+flex: 1 1 auto;
+}
+
+.app-cadastro-menu {
+background-color: #272828;
+color: white;
+}
+
+.btn-search {
+margin-left: 5px;
+height: 40px;
+color: green !important;
+border-color: green !important;
+}
+
+
+.app-cadastro-form {
+min-width: 150px;
+max-width: 500px;
+width: 100%;
+}
+
+.app-cadastro-full-width {
+width: 100%;
+}
+
+.app-cadastro-form-field {
+width: 200px;
+margin-top: 20px;
+}
+
+.active-link {
+    background-color: #8a8a8a; /* Altere para a cor desejada */
+}
